@@ -15,7 +15,7 @@ const collections = [
 export default function Collection() {
   return (
     <section className="relative overflow-hidden px-5 py-10">
-      {/* Blur Background */}
+      {/* Background Blur */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-pink-200 blur-3xl" />
         <div className="absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-rose-200 blur-3xl" />
@@ -28,7 +28,7 @@ export default function Collection() {
             OUR COLLECTION
           </p>
 
-          <h2 className="text-4xl font-light leading-tight text-[#2b2b2b]">
+          <h2 className="text-4xl font-light leading-tight text-[#2B2B2B]">
             Elegance For
             <br />
             Every Occasion
@@ -42,18 +42,28 @@ export default function Collection() {
           </p>
         </div>
 
-        {/* Featured Image */}
+        {/* Featured Collection */}
         <div className="mb-4 overflow-hidden rounded-[32px] bg-white shadow-[0_15px_40px_rgba(223,166,184,0.15)]">
           <Image
             src={collections[0]}
             alt="Featured Collection"
-            width={1000}
-            height={1200}
-            className="h-[420px] w-full object-cover transition duration-500 hover:scale-105"
+            width={1200}
+            height={1400}
+            priority
+            quality={75}
+            sizes="100vw"
+            className="
+              h-[420px]
+              w-full
+              object-cover
+              transition-transform
+              duration-500
+              hover:scale-105
+            "
           />
         </div>
 
-        {/* Grid */}
+        {/* Collection Grid */}
         <div className="grid grid-cols-2 gap-4">
           {collections.slice(1).map((item, index) => (
             <div
@@ -68,13 +78,16 @@ export default function Collection() {
               <Image
                 src={item}
                 alt={`Collection ${index + 2}`}
-                width={500}
-                height={600}
+                width={600}
+                height={800}
+                loading="lazy"
+                quality={70}
+                sizes="(max-width:768px) 50vw, 300px"
                 className="
                   h-[220px]
                   w-full
                   object-cover
-                  transition
+                  transition-transform
                   duration-500
                   hover:scale-105
                 "
@@ -83,7 +96,7 @@ export default function Collection() {
           ))}
         </div>
 
-        {/* Button */}
+        {/* CTA Button */}
         <a
           href="https://drive.google.com/file/d/1dN8nWznVnz_gy4s1LWM1mKpJRql28HPs/view?usp=drivesdk"
           target="_blank"
@@ -93,13 +106,12 @@ export default function Collection() {
             flex
             items-center
             justify-center
-            rounded-[28px]
+            rounded-[30px]
             bg-gradient-to-r
             from-[#E6B5C4]
             to-[#DFA6B8]
             px-6
             py-5
-            text-center
             text-lg
             font-semibold
             text-white
@@ -107,6 +119,7 @@ export default function Collection() {
             transition-all
             duration-500
             hover:-translate-y-1
+            hover:shadow-[0_25px_60px_rgba(223,166,184,0.35)]
           "
         >
           Browse Full Collection →
