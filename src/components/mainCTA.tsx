@@ -42,7 +42,7 @@ export default function MainCTA() {
       <div className="relative z-10">
         {/* Main CTA */}
         <a
-          href="https://drive.google.com/file/d/1sVY2go6eC33i3qEQdtaUgd9sL9gJsqMn/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1oNFf7b6fycdc3hV2VZpVERpogmrs1MXI/view?usp=drivesdk"
           target="_blank"
           rel="noopener noreferrer"
           className="
