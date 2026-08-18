@@ -98,7 +98,7 @@ export default function Collection() {
 
         {/* CTA Button */}
         <a
-          href="https://drive.google.com/file/d/1qaGojrNapnchc_cv5d2Ij6VLAZK5It5L/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1jZQWSKkLVIaHur4Tm45VcbNIqtNCuOgm/view?usp=drivesdk"
           target="_blank"
           rel="noopener noreferrer"
           className="
