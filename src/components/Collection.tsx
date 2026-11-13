@@ -1,15 +1,13 @@
-"use client";
-
 import Image from "next/image";
 
 const collections = [
-  "/collection/1.png",
-  "/collection/2.png",
-  "/collection/3.png",
-  "/collection/4.png",
-  "/collection/5.png",
-  "/collection/6.png",
-  "/collection/7.png",
+  "/collection/1.webp",
+  "/collection/2.webp",
+  "/collection/3.webp",
+  "/collection/4.webp",
+  "/collection/5.webp",
+  "/collection/6.webp",
+  "/collection/7.webp",
 ];
 
 export default function Collection() {

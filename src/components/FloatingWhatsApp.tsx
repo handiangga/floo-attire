@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function FloatingWhatsApp() {
@@ -30,7 +28,7 @@ export default function FloatingWhatsApp() {
       "
     >
       <Image
-        src="/logo/wa.png"
+        src="/logo/wa.webp"
         alt="WhatsApp"
         width={34}
         height={34}

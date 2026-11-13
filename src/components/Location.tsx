@@ -1,5 +1,3 @@
-"use client";
-
 import { MapPin, Navigation } from "lucide-react";
 
 export default function Location() {

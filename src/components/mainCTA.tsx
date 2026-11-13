@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Globe, MapPin } from "lucide-react";
 
@@ -7,19 +5,19 @@ const links = [
   {
     title: "WhatsApp Admin",
     subtitle: "Personal Styling Assistance",
-    image: "/logo/wa.png",
+    image: "/logo/wa.webp",
     href: "https://wa.me/6285113292011",
   },
   {
     title: "Instagram",
     subtitle: "Daily Outfit Inspiration",
-    image: "/logo/ig.png",
+    image: "/logo/ig.webp",
     href: "https://www.instagram.com/floo_attire",
   },
   {
     title: "TikTok",
     subtitle: "Latest Trends & Collection",
-    image: "/logo/tiktok.png",
+    image: "/logo/tiktok.webp",
     href: "https://www.tiktok.com/@floo_attire",
   },
   {

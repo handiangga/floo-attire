@@ -1,5 +1,3 @@
-"use client";
-
 import { Crown, Ruler, Sparkles, ShieldCheck } from "lucide-react";
 
 const features = [

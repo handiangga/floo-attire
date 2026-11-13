@@ -1,5 +1,3 @@
-"use client";
-
 const testimonials = [
   {
     name: "Milla",
@@ -84,7 +82,7 @@ export default function Testimoni() {
               <div className="mb-3 text-lg">⭐⭐⭐⭐⭐</div>
 
               <p className="leading-8 text-[15px] text-[#6F6570]">
-                "{item.review}"
+                &ldquo;{item.review}&rdquo;
               </p>
 
               <div className="mt-4 flex items-center gap-3">

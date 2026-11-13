@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function Footer() {
@@ -7,7 +5,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden px-5 pb-10 pt-6">
       <div className="text-center">
         <Image
-          src="/logo/logo.png"
+          src="/logo/logo.webp"
           alt="Floo Attire"
           width={120}
           height={120}

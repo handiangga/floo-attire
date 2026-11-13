@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 export default function Hero() {
@@ -14,7 +12,7 @@ export default function Hero() {
       <div className="relative z-10 text-center">
         {/* Logo */}
         <Image
-          src="/logo/logo.png"
+          src="/logo/logo.webp"
           alt="Floo Attire"
           width={180}
           height={180}
