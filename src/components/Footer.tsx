@@ -2,31 +2,31 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden px-5 pb-10 pt-6">
+    <footer className="border-t border-[#f0e6e2] px-5 pb-10 pt-10">
       <div className="text-center">
         <Image
           src="/logo/logo.webp"
           alt="Floo Attire"
-          width={120}
-          height={120}
-          className="mx-auto mb-4 h-auto w-auto"
+          width={100}
+          height={100}
+          className="mx-auto mb-4 h-auto w-[88px]"
         />
 
-        <h3 className="text-2xl font-light text-[#2b2b2b]">Floo Attire</h3>
+        <h3 className="font-display text-3xl text-[#2a2023]">Floo Attire</h3>
 
-        <p className="mt-3 text-sm tracking-[0.2em] text-[#D88FA7]">
+        <p className="mt-3 text-[9px] font-medium tracking-[0.3em] text-[#b87889]">
           ELEGANT • EXCLUSIVE • TIMELESS
         </p>
 
-        <div className="mx-auto my-6 h-px w-24 bg-[#E3A9BA]" />
+        <div className="mx-auto my-6 h-px w-16 bg-[#d8a7b1]" />
 
-        <p className="text-sm leading-7 text-[#8A7C85]">
+        <p className="text-sm leading-6 text-[#786c70]">
           Premium Kebaya Rental
           <br />
           For Every Special Occasion ✨
         </p>
 
-        <p className="mt-6 text-xs text-[#B59AA5]">
+        <p className="mt-6 text-[11px] text-[#a39298]">
           © 2026 Floo Attire. All Rights Reserved.
         </p>
       </div>

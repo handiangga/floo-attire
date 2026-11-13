@@ -23,65 +23,46 @@ const testimonials = [
 
 export default function Testimoni() {
   return (
-    <section className="relative overflow-hidden px-5 py-10">
-      {/* Background Glow */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-pink-200 blur-3xl" />
-        <div className="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-rose-200 blur-3xl" />
-      </div>
-
-      <div className="relative z-10">
-        {/* Heading */}
+    <section className="border-t border-[#f0e6e2] bg-[#fdf6f5] px-5 py-12 sm:px-8">
+      <div>
         <div className="mb-8 text-center">
-          <p className="mb-3 text-[11px] uppercase tracking-[0.45em] text-[#D88FA7]">
+          <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.4em] text-[#b87889]">
             TESTIMONIALS
           </p>
 
-          <h2 className="text-4xl font-light leading-tight text-[#2b2b2b]">
+          <h2 className="font-display text-[40px] leading-[0.98] tracking-[-0.04em] text-[#2a2023]">
             Loved By
             <br />
             Our Customers
           </h2>
 
-          <div className="mx-auto mt-5 h-px w-20 bg-[#E3A9BA]" />
+          <div className="mx-auto mt-5 h-px w-16 bg-[#d8a7b1]" />
         </div>
 
-        {/* Rating Summary */}
         <div
           className="
-            mb-6
-            rounded-[32px]
-            bg-white/90
-            p-6
+            mb-5 rounded-[24px] border border-[#ead9d2] bg-white p-6
             text-center
-            shadow-[0_15px_40px_rgba(223,166,184,0.15)]
           "
         >
-          <div className="text-4xl mb-2">⭐️⭐️⭐️⭐️⭐️</div>
-
-          <h3 className="text-4xl font-bold text-[#2b2b2b]">5.0 / 5.0</h3>
-
-          <p className="mt-2 text-sm text-[#8A7C85]">
+          <div className="mb-2 text-2xl tracking-[0.12em]">★★★★★</div>
+          <h3 className="font-display text-[38px] font-bold text-[#2a2023]">5.0 / 5.0</h3>
+          <p className="mt-2 text-sm text-[#786c70]">
             Trusted by hundreds of happy customers
           </p>
         </div>
 
-        {/* Reviews */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           {testimonials.map((item) => (
             <div
               key={item.name}
               className="
-                rounded-[28px]
-                bg-white/90
-                p-5
-                shadow-[0_12px_30px_rgba(223,166,184,0.12)]
-                backdrop-blur-sm
+                rounded-[22px] border border-[#ead9d2] bg-white p-5
               "
             >
-              <div className="mb-3 text-lg">⭐⭐⭐⭐⭐</div>
+              <div className="mb-3 text-sm tracking-[0.12em] text-[#b87889]">★★★★★</div>
 
-              <p className="leading-8 text-[15px] text-[#6F6570]">
+              <p className="leading-7 text-[14px] text-[#62565a]">
                 &ldquo;{item.review}&rdquo;
               </p>
 
@@ -89,14 +70,11 @@ export default function Testimoni() {
                 <div
                   className="
                     flex
-                    h-10
-                    w-10
+                  h-9 w-9
                     items-center
                     justify-center
                     rounded-full
-                    bg-gradient-to-r
-                    from-pink-300
-                    to-rose-300
+                  bg-[#e2adb9]
                     text-sm
                     font-bold
                     text-white
@@ -105,7 +83,7 @@ export default function Testimoni() {
                   ♥
                 </div>
 
-                <span className="font-semibold text-[#2b2b2b]">
+                <span className="text-sm font-semibold text-[#2a2023]">
                   {item.name}
                 </span>
               </div>
@@ -113,9 +91,8 @@ export default function Testimoni() {
           ))}
         </div>
 
-        {/* Bottom Trust */}
         <div className="mt-8 text-center">
-          <p className="text-sm text-[#8A7C85]">
+          <p className="text-[13px] text-[#786c70]">
             ✨ Elegant • Exclusive • Timeless ✨
           </p>
         </div>

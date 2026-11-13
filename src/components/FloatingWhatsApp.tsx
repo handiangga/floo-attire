@@ -9,30 +9,23 @@ export default function FloatingWhatsApp() {
       aria-label="WhatsApp"
       className="
         fixed
-        bottom-5
-        right-5
+        bottom-4 right-4
         z-50
         flex
-        h-16
-        w-16
+        h-14 w-14
         items-center
         justify-center
         rounded-full
-        bg-white
-        shadow-[0_20px_50px_rgba(223,166,184,0.35)]
-        ring-4
-        ring-[#F7E3EA]
-        transition-all
-        duration-300
-        hover:scale-110
+        bg-[#b87889] shadow-[0_12px_24px_rgba(150,91,108,0.25)]
+        ring-4 ring-white transition-transform duration-300 hover:scale-105
       "
     >
       <Image
         src="/logo/wa.webp"
         alt="WhatsApp"
-        width={34}
-        height={34}
-        className="object-contain"
+        width={28}
+        height={28}
+        className="h-7 w-7 object-contain brightness-0 invert"
       />
     </a>
   );

@@ -1,145 +1,103 @@
-import Image from "next/image";
-import { Globe, MapPin } from "lucide-react";
+import { ArrowRight, Camera, Globe2, MapPin, MessageCircle, Music2 } from "lucide-react";
 
 const links = [
   {
     title: "WhatsApp Admin",
     subtitle: "Personal Styling Assistance",
-    image: "/logo/wa.webp",
+    icon: MessageCircle,
     href: "https://wa.me/6285113292011",
   },
   {
     title: "Instagram",
     subtitle: "Daily Outfit Inspiration",
-    image: "/logo/ig.webp",
+    icon: Camera,
     href: "https://www.instagram.com/floo_attire",
   },
   {
     title: "TikTok",
     subtitle: "Latest Trends & Collection",
-    image: "/logo/tiktok.webp",
+    icon: Music2,
     href: "https://www.tiktok.com/@floo_attire",
   },
   {
     title: "Lokasi Boutique",
     subtitle: "Visit Our Showroom",
-    icon: <MapPin className="h-7 w-7" />,
+    icon: MapPin,
     href: "https://maps.app.goo.gl/SLE377L4LrMpkVCh7",
   },
 ];
 
 export default function MainCTA() {
   return (
-    <section className="relative overflow-hidden px-5 py-6">
-      {/* Background Blur */}
-      <div className="absolute inset-0 opacity-50">
-        <div className="absolute -top-20 -left-10 h-72 w-72 rounded-full bg-pink-200 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-rose-200 blur-3xl" />
-      </div>
-
-      <div className="relative z-10">
-        {/* Main CTA */}
+    <section className="px-5 pb-8 sm:px-8">
+      <div>
         <a
           href="https://sewa.floofashionn.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="
-            group
-            mb-4
-            flex
+            mb-4 flex
             items-center
             justify-between
-            rounded-[30px]
-            bg-[#E3A9BA]
-            px-5
-            py-5
+            rounded-[24px]
+            bg-[#b87889]
+            px-5 py-4
             text-white
-            shadow-[0_15px_40px_rgba(227,169,186,0.35)]
-            transition-all
-            duration-300
-            hover:-translate-y-1
-            hover:bg-[#D996A9]
+            shadow-[0_14px_28px_rgba(150,91,108,0.18)] transition-colors hover:bg-[#9e6574]
           "
         >
           <div className="flex items-center gap-4">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md">
-              <Globe className="h-7 w-7 text-[#E3A9BA]" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/30">
+              <Globe2 className="h-5 w-5" />
             </div>
 
             <div>
-              <h3 className="text-[20px] font-bold leading-tight">
+              <h3 className="text-[17px] font-semibold leading-tight">
                 Katalog Kebaya
               </h3>
 
-              <p className="text-sm text-white/80">
+              <p className="mt-1 text-xs text-white/80">
                 Explore Our Signature Collection
               </p>
             </div>
           </div>
 
-          <span className="text-2xl transition-transform duration-300 group-hover:translate-x-1">
-            →
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25">
+            <ArrowRight className="h-5 w-5" />
           </span>
         </a>
 
-        {/* Other Links */}
-        <div className="space-y-4">
-          {links.map((item) => (
+        <div className="overflow-hidden rounded-[26px] bg-[#f7edef] px-4 py-1.5">
+          {links.map((item, index) => {
+            const Icon = item.icon;
+            return (
             <a
               key={item.title}
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-              group
-              flex
-              items-center
-              justify-between
-              rounded-[32px]
-              bg-gradient-to-r
-              from-[#E8BAC8]
-              via-[#E1AFC0]
-              to-[#D89FB3]
-              px-6
-              py-5
-             text-white
-              shadow-[0_20px_50px_rgba(223,166,184,0.28)]
-              transition-all
-              duration-500
-              hover:-translate-y-1
-              hover:scale-[1.01]
-              hover:shadow-[0_30px_70px_rgba(223,166,184,0.35)]
-              "
+              className={`flex items-center justify-between px-1 py-4 text-[#2a2023] transition-colors hover:bg-white/45 ${
+                index !== links.length - 1 ? "border-b border-[#dec8b6]/80" : ""
+              }`}
             >
               <div className="flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md">
-                  {item.image ? (
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={30}
-                      height={30}
-                      className="h-auto w-auto object-contain"
-                    />
-                  ) : (
-                    <div className="text-[#E3A9BA]">{item.icon}</div>
-                  )}
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[#b87889] shadow-[0_4px_12px_rgba(112,72,81,0.08)]">
+                  <Icon className="h-5 w-5" strokeWidth={1.8} />
                 </div>
 
                 <div>
-                  <h3 className="text-[18px] font-semibold tracking-tight">
+                  <h3 className="text-[15px] font-semibold tracking-tight">
                     {item.title}
                   </h3>
 
-                  <p className="mt-1 text-sm text-white/75">{item.subtitle}</p>
+                  <p className="mt-0.5 text-[11px] text-[#786c70]">{item.subtitle}</p>
                 </div>
               </div>
 
-              <span className="text-xl opacity-90 transition-all duration-300 group-hover:translate-x-1">
-                →
-              </span>
+              <ArrowRight className="h-5 w-5 text-[#b87889]" strokeWidth={1.7} />
             </a>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
